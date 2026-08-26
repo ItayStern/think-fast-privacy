@@ -1,0 +1,253 @@
+<title>מדיניות פרטיות — תחשוב מהר!</title>
+<style>
+  :root {
+    --bg: #F7F5F1;
+    --surface: #FFFFFF;
+    --border: rgba(32, 32, 43, 0.12);
+    --text: #1D1D24;
+    --text-muted: #55555F;
+    --accent: #B8860B;
+    --accent-soft: rgba(184, 134, 11, 0.12);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #20202B;
+      --surface: #2A2A36;
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #F3F3F5;
+      --text-muted: rgba(243, 243, 245, 0.65);
+      --accent: #FBBF24;
+      --accent-soft: rgba(251, 191, 36, 0.14);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #20202B;
+    --surface: #2A2A36;
+    --border: rgba(255, 255, 255, 0.10);
+    --text: #F3F3F5;
+    --text-muted: rgba(243, 243, 245, 0.65);
+    --accent: #FBBF24;
+    --accent-soft: rgba(251, 191, 36, 0.14);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Heebo', -apple-system, 'Segoe UI', sans-serif;
+    direction: rtl;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 800;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 32px 0 48px;
+  }
+
+  .summary-card p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .summary-card strong {
+    color: var(--accent);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 16px;
+  }
+
+  h2::before {
+    content: "";
+    width: 4px;
+    height: 22px;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  section p, section li {
+    font-size: 16px;
+    color: var(--text);
+    max-width: 65ch;
+  }
+
+  section ul {
+    margin: 0;
+    padding-inline-start: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .fact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+
+  .fact .label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .fact .value {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 56px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    .fact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<div class="page">
+  <header>
+    <div class="badge">תחשוב מהר!</div>
+    <h1>מדיניות פרטיות</h1>
+    <p class="meta">בתוקף מ-26 באוגוסט 2026</p>
+  </header>
+
+  <div class="summary-card">
+    <p><strong>בקצרה:</strong> תחשוב מהר! לא אוספת, לא שולחת ולא משתפת שום מידע אישי. כל מה שהאפליקציה שומרת (הגדרת סאונד, מספר שחקנים) נשאר על המכשיר שלך בלבד ולעולם לא יוצא ממנו.</p>
+  </div>
+
+  <div class="fact-grid">
+    <div class="fact">
+      <div class="label">חיבור לאינטרנט</div>
+      <div class="value">לא נדרש בכלל</div>
+    </div>
+    <div class="fact">
+      <div class="label">חשבון משתמש</div>
+      <div class="value">לא קיים</div>
+    </div>
+    <div class="fact">
+      <div class="label">פרסומות / מעקב</div>
+      <div class="value">אין</div>
+    </div>
+    <div class="fact">
+      <div class="label">שיתוף עם צד שלישי</div>
+      <div class="value">אין</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>מי אנחנו</h2>
+    <p>תחשוב מהר! היא אפליקציית משחק מסיבה שפותחה ומופעלת על ידי איתי שטרן ("אנחנו", "המפתח"). מדיניות זו חלה על אפליקציית תחשוב מהר! בלבד.</p>
+  </section>
+
+  <section>
+    <h2>איזה מידע אנחנו אוספים</h2>
+    <p>שום מידע אישי או מזהה. האפליקציה לא מבקשת שם, אימייל, מספר טלפון, מיקום, גישה לאנשי קשר, מצלמה או מיקרופון, ואינה יוצרת חשבון משתמש מכל סוג שהוא.</p>
+    <p>האפליקציה שומרת מקומית על המכשיר שלך, באמצעות אחסון מובנה של המערכת (Local Storage), שתי העדפות בלבד:</p>
+    <ul>
+      <li>האם הסאונד באפליקציה מופעל או כבוי</li>
+      <li>מספר השחקנים שנבחר במשחק האחרון</li>
+    </ul>
+    <p>מידע זה נשאר אך ורק על המכשיר שלך, לעולם לא נשלח לשום שרת, ונמחק אוטומטית אם תמחק את האפליקציה.</p>
+  </section>
+
+  <section>
+    <h2>שיתוף מידע</h2>
+    <p>מכיוון שאיננו אוספים מידע, אין לנו מה לשתף. האפליקציה אינה מתחברת לאינטרנט, אינה משתמשת בשירותי אנליטיקס או פרסום, ואינה משתפת נתונים עם צדדים שלישיים כלשהם — לא למטרות שיווק, לא למכירה, ולא מכל סיבה אחרת.</p>
+  </section>
+
+  <section>
+    <h2>פרטיות ילדים</h2>
+    <p>מכיוון שהאפליקציה אינה אוספת שום מידע אישי מאף משתמש, זה נכון גם ביחס לילדים. האפליקציה מתאימה למשחק משפחתי ואינה כוללת תוכן המיועד למבוגרים בלבד.</p>
+  </section>
+
+  <section>
+    <h2>שינויים במדיניות זו</h2>
+    <p>אם מדיניות הפרטיות תשתנה בעתיד (למשל אם תתווסף יכולת שדורשת איסוף מידע), נעדכן את התאריך בראש העמוד ונציין את השינויים באופן ברור. ממליצים לבדוק את העמוד הזה מדי פעם.</p>
+  </section>
+
+  <section>
+    <h2>יצירת קשר</h2>
+    <p>שאלות לגבי מדיניות הפרטיות הזו אפשר לשלוח לכתובת: <a href="mailto:itaystern2006@gmail.com">itaystern2006@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2026 תחשוב מהר!. מסמך זה זמין באופן ציבורי ומתאר את מדיניות הפרטיות המלאה של האפליקציה.
+  </footer>
+</div>
